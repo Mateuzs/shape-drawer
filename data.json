@@ -1,0 +1,23 @@
+{
+    "Figures": [
+        {"type": "circle", "x": 200, "y": 300, "radius" : 100, "color": "yellow"},
+        {"type": "square", "x": 300, "y": 200, "length" : 300, "color": "lightblue"},
+        {"type": "rectangle", "x": 400, "y": 300, "height" : 100, "width" : 300},
+        {"type": "point", "x": 400, "y": 300, "color": "fosfor"},
+        {"type": "polygon", "points": [[200,200], [100,500], [500,433], [400,281], [600,39]], "color": "orange"}
+
+    ],
+    "Screen": {"width": 800, "height": 600, "bg_color": "defaultbg", "fg_color": "default"},
+
+    "Palette": {
+                "lightblue": "#80e3ff",
+                "blue": "#0000ff",
+                "black": "#000000",
+                "yellow": "(211,212,255)",
+                "orange" : "#fcf2e2",
+                "defaultbg": "#311b31",
+                "default": "#eff6e3",
+                "fosfor":  "#fcfc15",
+                "beauty": "#dcf9f7"
+                }
+}
