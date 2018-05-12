@@ -4,7 +4,9 @@ App which takes json file with description and draw a 2D figure on the screen.
 ## GettingStarted
 
 Download this repo, open terminal, unpack the repository and type inside:
-`python main.py`
+```
+python main.py
+``` 
 You will see short help information. 
 
 There are two awailable options: 
