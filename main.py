@@ -7,9 +7,6 @@ import sys
 
 def main(args):
 
-
-
-
     parser = argparse.ArgumentParser()
     parser.add_argument("-a", nargs=1, action="store", dest="json_file_name", default=["empty"])
     parser.add_argument("-o", nargs=1, action="store", dest="image_name", default=["empty"])
