@@ -1,6 +1,6 @@
 {
     "Figures": [
-        {"type": "circle", "x": 200, "y": 300, "radius" : 100, "color": "yellow"},
+        {"type": "circle", "xf": 200, "y": 300, "radius" : 100, "color": "yellow"},
         {"type": "square", "x": 300, "y": 200, "length" : 300, "color": "lightblue"},
         {"type": "rectangle", "x": 400, "y": 300, "height" : 100, "width" : 300},
         {"type": "point", "x": 400, "y": 300, "color": "fosfor"},
@@ -13,7 +13,7 @@
                 "lightblue": "#80e3ff",
                 "blue": "#0000ff",
                 "black": "#000000",
-                "yellow": "(211,212,255)",
+                "yelow": "(211,212,255)",
                 "orange" : "#fcf2e2",
                 "defaultbg": "#311b31",
                 "default": "#eff6e3",
