@@ -3,6 +3,7 @@ from database import DataBase
 
 
 class JsonParser:
+
     def __init__(self):
         self.screen = ""
         self.palette = ""

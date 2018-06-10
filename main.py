@@ -1,14 +1,11 @@
 from json_parser import JsonParser
-from shape_drawer import CircleDrawer, SquareDrawer, RectangleDrawer, PointDrawer, PolygonDrawer
+from shape_drawer import CircleDrawer, RectangleDrawer, PointDrawer, PolygonDrawer
 from database import DataBase
 import argparse
 import sys
 
 
 def main(args):
-
-
-
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-a", nargs=1, action="store", dest="json_file_name", default=["empty"])
@@ -34,7 +31,9 @@ def main(args):
     database = DataBase()
 
     for figure in figures:
+
         figure_name = figure.get('type')
+
         if figure_name in database.figures:
 
             if figure_name == 'circle':
@@ -42,12 +41,7 @@ def main(args):
                     shape = CircleDrawer(screen, palette, figure, image_name)
                     shape.draw_circle()
 
-            elif figure_name == 'square':
-
-                    shape = SquareDrawer(screen, palette, figure, image_name)
-                    shape.draw_square()
-
-            elif figure_name == 'rectangle':
+            elif figure_name in ['square', 'rectangle']:
 
                     shape = RectangleDrawer(screen, palette, figure, image_name)
                     shape.draw_rectangle()
@@ -62,9 +56,8 @@ def main(args):
                     shape = PolygonDrawer(screen, palette, figure, image_name)
                     shape.draw_polygon()
 
-            else:
-                print("Unrecognized figure")
-                exit(0)
+        else:
+                print("Unrecognized figure: ", figure_name)
 
 
 if __name__ == "__main__":
